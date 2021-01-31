@@ -4,13 +4,16 @@ title: A Propos
 permalink: /about/
 ---
 
+# Work In Progress
+
+Si vous tombez par hasard sur mon porfolio, notez qu'il est en chantier!
+ 
 ## À Propos
 
-Je suis Marc Gardent Lyonnais, développeur de formation, et graphiste de passion. Vous retrouvez une presentation des  mes créations professionnelles et personnelles.
+Je suis Marc Gardent Lyonnais, développeur de formation, et graphiste de passion. Vous retrouvez une presentation de  mes créations professionnelles et personnelles.
 
 ## Contact
 
-Contactez-moi sur [LinkedIn](https://linkedin.com/in/marcgardent)
-
+![carte de visite]({{ site.github.url }}/assets/img/bussiness-card.png)
 
 {% include footer.html %}
