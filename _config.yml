@@ -1,69 +1,39 @@
-# Site settings
-title: Freelancer
-email: marcgardent@gmail.com
-url: https://github.com/marcgardent
-description: "Marc Gardent's Portfolio"
-keywords: "developpeur, graphiste"
-skills: "FullStack Builder - Game Designer- Graphic Artist"
-meta_author: Marc Gardent
+ 
 
-# Google webmaster tools
-google_verify:
+title: Marc Gardent's
+description: >-
+  Marc Gardent's Portfolio
+  One day I opened an intriguing editor running under DOS,
+  read the help, tried some samples, and wrote my first program.
+  Once a coder, always a coder.
 
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-contact: static
-
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
-disqus_shortname: myshortname
-
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
-
-# Footer settings
-footer:
-  copyright: Dr. Henry Jekyll
-  location: Location
-  social: Around the Web
-  credits: Credits
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/marcgardent
-  - title: linkedin
-    url: http://linkedin.com/marcgardent
-  - title: medium
-    url: https://medium.com/@marcgardent
-  - title: github
-    url: http://github.com/marcgardent
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: The best place ever
-  - line: Lyon, France
-
-# Credits content
-credits: 'Marc Gardent Copyright 2021'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username:  marcgardent
+github_username:  marcgardent
+twitter_username: marcgardent
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+theme: minima
+plugins:
+  - jekyll-feed
 
-#for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ""
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
