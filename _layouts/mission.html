@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<section>
+  <div class="mission-container">
+    <h2>{{page.entreprise}} : {{ page.title | markdownify | inline  }}</h2>
+    <h3>Contexte</h3>
+    <div class="project-load">{{ content }}</div>
+    <h3>Description</h3>
+    <p>
+    Mission du <b>{{ page.date| date: "%m/%Y" }}</b> au <b>{{ page.end_date| date: "%m/%Y" }}</b>
+    en tant que <b>{{page.position| markdownify | inline}}</b> ({{page.status| markdownify | inline}}) :
+    <ul>
+      <li><b>Équipe :</b>{{page.team| markdownify | inline}}</li>
+    <li><b>Réalisations</b> :
+    <ul>
+    {% for item in page.acheivements %}
+      {{ item | markdownify | inline }}
+    {% endfor %}
+    </ul>
+    </li>
+    <li><b>Environnement</b> : 
+    {% for item in page.environnements %}
+      <code>{{ item }},</code>
+    {% endfor %}
+    </li>
+    </ul>
+    </p>
+    <h3>Bilan</h3>
+    <p>
+      <b>Mon expérience acquise :</b>
+      <ul>
+      {% for item in page.output_skill %}
+      <li>{{ item | markdownify | inline}}</li>
+      {% endfor %}
+      </ul>
+    </p>
+
+    <div>
+    <b>Mon apport :</b>
+      <ul>
+      {% for item in page.input_skill %}
+      <li>{{ item | markdownify | inline}}</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

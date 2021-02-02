@@ -2,8 +2,7 @@
 # General Site Settings
 
 menu:
-- {name: 'Réalisations', url: ''}
-- {name: 'Missions', url: 'blog/'}
+- {name: 'CV', url: 'missions/'}
 - {name: 'À Propos', url: 'about/'}
 
 #-------------------------------

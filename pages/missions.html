@@ -1,0 +1,18 @@
+---
+layout: default
+title: Missions
+permalink: /missions/
+---
+
+<section>
+  <div class="blog-container">
+    {% for post in site.categories.mission %}
+      <div class="blog-unit">
+        <h1><a href="{{ site.github.url }}{{ post.url }}">{{ post.entreprise | upcase  }} : {{ post.title | markdownify | inline}}</a></h1>
+        <span class="blog-date">
+           <b>{{post.position| markdownify | inline}}</b> du <b>{{ post.start_date| date: "%m/%Y" }}</b> au <b>{{ post.end_date| date: "%m/%Y" }}</b>
+        </span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
