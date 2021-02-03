@@ -3,12 +3,13 @@
 
 @import '1-tools/-tools-dir'
 
-
 //------------------------------------------------
 // Set some colors as sass variables
 
-$accent-color: #BD5248
-$accent: {{ site.data.layout.accent }}
+$stroke: black
+$fill: white
+$accent: magenta
+$accent-color: $accent
 $accent-light: adjust-hue(saturate(lighten($accent, 11%), 12.6%), 14%)
 $selectionColor: lighten($accent, 30%)
 
@@ -20,3 +21,34 @@ $documentBackgroundColor: {{ site.data.layout.documentBackgroundColor }}
 @import '2-base/-base-dir'
 @import '3-sections/-sections-dir'
 
+.strip
+  width: 100%
+  background: black
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: $stroke
+
+  margin-left: -50vw
+  left: 50%
+  position: fixed
+  width: 100vw
+  padding: 15px
+  box-shadow:  0px 0px 10px $stroke 
+  color: $fill
+  div
+    text-align: center
+
+.highlight
+  color: $fill
+  background-color: $stroke 
+  border-radius: 0.15em
+  padding-left: 0.25em
+  padding-right: 0.25em
+
+a:hover .highlight
+  color: $fill
+  background-color: $accent
+
+  

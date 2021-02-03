@@ -6,13 +6,23 @@ permalink: /missions/
 
 <section>
   <div class="blog-container">
+  <p>Voici mon expérience professionnel en ordre anti-chronologique taggé avec mes trois piliers de compétances techniques</p>
+  <h3>aujourd'hui</h3>
     {% for post in site.categories.mission %}
       <div class="blog-unit">
-        <h1><a href="{{ site.github.url }}{{ post.url }}">{{ post.entreprise | upcase  }} : {{ post.title | markdownify | inline}}</a></h1>
+        <h1><a href="{{ site.github.url }}{{ post.url }}"><span class='highlight'>{{ post.entreprise | upcase  }}</span> {{ post.title | markdownify | inline}}</a></h1>
         <span class="blog-date">
+            {{ post.start_date | duration: post.end_date }}
+            {% for skill in post.skills %}
+            <span class="highlight">#{{skill}}</span>
+            {%endfor%}
            <b>{{post.position| markdownify | inline}}</b> du <b>{{ post.start_date| date: "%m/%Y" }}</b> au <b>{{ post.end_date| date: "%m/%Y" }}</b>
         </span>
+        <div>
+            {% for item in post.environnements %}<code>{{ item }}, </code>{% endfor %}
+        </div>
       </div>
+      <h3>{{post.start_date |date: "%m/%Y"  }}</h3>
     {% endfor %}
   </div>
 </section>

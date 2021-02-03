@@ -5,8 +5,9 @@ title: "création et industrialisation de l'infrastructure `Azure`"
 categories: 'mission'
 start_date: 2018-07-01
 end_date: 2021-04-01
-
-entreprise : Esker
+skills:
+  - devops
+entreprise: Esker
 team : 7 DevOps + 1 Product Owner + 1 Scrum Master
 position: Ingénieur R&D
 status: CDI
