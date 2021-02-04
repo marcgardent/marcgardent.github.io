@@ -6,23 +6,47 @@ permalink: /missions/
 
 <section>
   <div class="blog-container">
-  <p>Voici mon expérience professionnel en ordre anti-chronologique taggé avec mes trois piliers de compétances techniques</p>
-  <h3>aujourd'hui</h3>
-    {% for post in site.categories.mission %}
-      <div class="blog-unit">
-        <h1><a href="{{ site.github.url }}{{ post.url }}"><span class='highlight'>{{ post.entreprise | upcase  }}</span> {{ post.title | markdownify | inline}}</a></h1>
-        <span class="blog-date">
-            {{ post.start_date | duration: post.end_date }}
-            {% for skill in post.skills %}
-            <span class="highlight">#{{skill}}</span>
-            {%endfor%}
-           <b>{{post.position| markdownify | inline}}</b> du <b>{{ post.start_date| date: "%m/%Y" }}</b> au <b>{{ post.end_date| date: "%m/%Y" }}</b>
-        </span>
-        <div>
-            {% for item in post.environnements %}<code>{{ item }}, </code>{% endfor %}
+    <div class="introduction vertical-align-container">
+      <img class="logo" src="{{ site.github.url }}/assets/img/mg-ico.svg" alt="logo"/>
+      <div class="name">Marc Gardent</div>
+      <div class="position">FullStack Builder</div>
+      <div class="horizontal-align-container">
+        <div class="skill vertical-align-container">
+          <img style="width:4em" src="{{ site.github.url }}/assets/img/backend-ico.svg" alt="backend"/>
+          <div>backend</div>
+        </div>
+        <div class="skill vertical-align-container">
+          <img style="width:4em" src="{{ site.github.url }}/assets/img/devops-ico.svg" alt="devops"/>
+          <div>devops</div>
+        </div>
+        <div class="skill vertical-align-container">
+          <img style="width:4em" src="{{ site.github.url }}/assets/img/frontend-ico.svg" alt="frontend"/>
+          <div>frontend</div>
         </div>
       </div>
-      <h3>{{post.start_date |date: "%m/%Y"  }}</h3>
-    {% endfor %}
-  </div>
-</section>
+    </div>
+
+    <p>Voici mon expérience professionnel en ordre anti-chronologique taggé avec mes trois piliers de compétances techniques</p>
+    <h3>aujourd'hui</h3>
+    {% for post in site.categories.mission %}
+      <div class="blog-unit">
+        <h1>
+          <span class='highlight'>{{ post.entreprise | upcase  }}</span>
+          {{ post.title | markdownify | inline}}</h1>
+        <span class="blog-date">
+          {{ post.start_date | duration: post.end_date }}
+          {% for skill in post.skills %}
+            <img class="tag" src="{{ site.github.url }}/assets/img/{{skill}}-tag.svg" alt="{{skill}}"/>
+            {%endfor%}
+            <b>{{post.position| markdownify | inline}}</b> du <b>{{ post.start_date| date: "%m/%Y" }}</b> au <b>{{ post.end_date| date: "%m/%Y" }}</b>
+          </span>
+          <div>
+            {% for item in post.environnements %}
+              <code>{{ item }}, </code>
+            {% endfor %}
+          </div>
+        </div>
+        <h3>{{post.start_date |date: "%m/%Y"  }}</h3>
+      {% endfor %}
+    </div>
+  </section>

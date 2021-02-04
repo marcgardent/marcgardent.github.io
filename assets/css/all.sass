@@ -21,24 +21,19 @@ $documentBackgroundColor: {{ site.data.layout.documentBackgroundColor }}
 @import '2-base/-base-dir'
 @import '3-sections/-sections-dir'
 
-.strip
+.horizontal-align-container
   width: 100%
-  background: black
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.vertical-align-container
+  width: 100%
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
-  background-color: $stroke
-
-  margin-left: -50vw
-  left: 50%
-  position: fixed
-  width: 100vw
-  padding: 15px
-  box-shadow:  0px 0px 10px $stroke 
-  color: $fill
-  div
-    text-align: center
 
 .highlight
   color: $fill
@@ -51,4 +46,23 @@ a:hover .highlight
   color: $fill
   background-color: $accent
 
-  
+.tag
+  height: 1.5em
+  vertical-align: text-bottom
+
+.introduction
+  font-size: 2em
+  font-family: consolas
+  font-weight: bold
+  .name
+    font-size: 1.5em
+  .position
+    background: $stroke
+    color: $fill
+    border-radius: 0.25em
+    padding-inline: 0.5em
+  .logo
+    width: 3em
+  .skill
+    img
+      width: 10em
