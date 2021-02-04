@@ -1,7 +1,8 @@
 body
+  @include text-font 
   background: $fill
-  font-family: $text-font
   font-size: 16px
+  text-align: justify
   ::selection
     background-color: $accent-light
 .site-container
@@ -11,7 +12,9 @@ body
 @media (max-width: 768px)
   .site-container
     width: 95vw
-    
+
+code
+  @include tech-font
 
 img
   mix-blend-mode: multiply
@@ -26,8 +29,8 @@ a:hover
   color: $fill
   background-color: $stroke 
   border-radius: 0.15em
-  padding-left: 0.25em
-  padding-right: 0.25em
+  padding-inline: 0.25em
+  margin-inline: 0.25em
 
 a:hover .highlight
   color: $fill
@@ -37,6 +40,11 @@ a:hover .highlight
   height: 1.5em
   vertical-align: text-bottom
 
-
 h1, h2, h3, h4, h5
-  font-family: $title-font
+  @include title-font
+
+.skill
+  @include tech-font
+  font-weight: bold
+  img
+    width: 4em

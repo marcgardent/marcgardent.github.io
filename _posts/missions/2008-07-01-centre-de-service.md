@@ -3,8 +3,8 @@ layout: page
 categories: mission
 title: "Centre de service Rhône Alpes Osiatis"
 skills:
-  - frontend
-  - backend
+  - Frontend
+  - Backend
 start_date: 2008-07-01
 end_date: 2008-11-01
 entreprise : Osiatis

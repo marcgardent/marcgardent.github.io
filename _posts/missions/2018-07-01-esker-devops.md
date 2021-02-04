@@ -6,7 +6,7 @@ categories: 'mission'
 start_date: 2018-07-01
 end_date: 2021-04-01
 skills:
-  - devops
+  - DevOps
 entreprise: Esker
 team : 7 DevOps + 1 Product Owner + 1 Scrum Master
 position: Ingénieur R&D

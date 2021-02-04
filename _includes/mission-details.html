@@ -1,0 +1,35 @@
+{% assign mission = include.mission %}
+<section>
+  <h2>
+    <span class='highlight'>{{ mission.entreprise | upcase  }}</span>{{ mission.title | markdownify | inline}}</h2>
+  <span>
+    <b>{{mission.position| markdownify | inline}}</b> du <b>{{ mission.start_date| date: "%m/%Y" }}</b> au <b>{{ mission.end_date| date: "%m/%Y" }}</b>
+  </span>
+  <div>
+    {% for item in mission.environnements %}
+      <code>{{ item }}
+      </code>
+    {% endfor %}
+  </div>
+  <div class="comment">{{mission.story| markdownify}}</div>
+  <p>
+    Mission du <b>{{ mission.date| date: "%m/%Y" }}</b> au <b>{{ mission.end_date| date: "%m/%Y" }}</b>
+    en tant que <b>{{mission.position| markdownify | inline}}</b> ({{mission.status| markdownify | inline}})
+    <b>Équipe :</b>{{mission.team| markdownify | inline}}:
+    <ul>
+      {% for item in mission.acheivements %}
+        <li>{{ item | markdownify | inline }}</li>
+      {% endfor %}
+    </ul>
+  </p>
+  <p class="comment">
+      {% for item in mission.output_skill %}
+        {{ item | markdownify | inline}}
+      {% endfor %}
+  </p>
+  <p class="comment">
+      {% for item in mission.input_skill %}
+        {{ item | markdownify | inline}}
+      {% endfor %}
+  </p>
+</section>

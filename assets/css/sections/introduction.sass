@@ -1,20 +1,20 @@
 
-.introduction
+section.introduction
   font-size: 2em
   font-weight: bold
   .name
     font-size: 1.5em
-    font-family: $title-font
-  .subtitle:
-    font-family: $title-font
+    @include title-font
+  .subtitle
+    display: none
+    @include comment-font 
   .position
+    @include tech-font
     background: $stroke
     color: $fill
     border-radius: 0.25em
     padding-inline: 0.5em
   .logo
     width: 3em
-  .skill
-    font-family: $tech-font
-    img
-      width: 10em
+
+      

@@ -5,8 +5,8 @@ title: "Conception & Réalisation d'une platforme multi-tenant de traitement de 
 start_date: 2013-10-01
 end_date: 2018-07-01
 skills:
-  - backend
-  - devops
+  - Backend
+  - DevOps
 entreprise : Tessi
 team : 1 à 4 développeurs
 position: Développeur puis Responsable Technique Produit 

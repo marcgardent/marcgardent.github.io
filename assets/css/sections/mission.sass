@@ -1,0 +1,42 @@
+
+section.mission
+  h2
+    font-size: 2em
+  h3
+    font-size: 0.5em
+    text-align: center
+    text-transform: uppercase
+  
+  .box-layout
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: stretch
+  .annotation-box
+      flex: 0 0 6em
+      padding-right: 0.2em
+      margin-right: 0.2em
+
+      background-image: linear-gradient($stroke,$stroke)
+      background-size: 0.1em 100%
+      background-repeat: no-repeat
+      background-position: center center
+  .xp
+    @include note-font
+    text-align: center
+    font-size: 1.5em
+    background: $fill
+    transform: rotateZ(-4deg)
+  .date
+    display: none
+    color: $fill
+    background: $stroke
+    border-radius: 50%
+    width: 4em
+    height: 4em
+    margin-bottom: 2em
+
+  .content-box
+  .comment
+    @include comment-font

@@ -6,13 +6,9 @@ title: Home
 {% include introduction.html %}
 
 <section class="mission">
-    <p>Voici mon expérience professionnel en ordre anti-chronologique taggé avec mes trois piliers de compétances techniques</p>
-    <h3>aujourd'hui</h3>
-        {% for mission in site.categories.mission %}
-        {% include mission.html mission=mission %}
-        <h3>{{mission.start_date |date: "%m/%Y"  }}</h3>
-        {% endfor %}
-    </div>
+    {% for mission in site.categories.mission %}
+    {% include mission.html mission=mission %}
+    {% endfor %}
 </section>
 
 {% include footer.html %}

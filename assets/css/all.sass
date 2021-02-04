@@ -1,19 +1,39 @@
 ---
 ---
 $stroke: black
-$fill: #ffdc73
-$accent: #853c01
+$fill: white
+$accent: magenta
 $accent-color: $accent
 $accent-light:  lighten($accent, 30%)
 $accent-dark:  darken($accent, 30%)
+    
+//font-family: 'Ma Shan Zheng', cursive;
+//font-family: 'Permanent Marker', cursive;
+//font-family: 'Roboto', sans-serif;
+//font-family: 'Rock Salt', cursive;
+//font-family: 'Share Tech Mono', monospace;
+//font-family: 'Sue Ellen Francisco', cursive;
 
-$title-font: 'Roboto', sans-serif
-$text-font: 'Roboto', sans-serif
-$comment-font: 'Roboto', sans-serif
-$tech-font: consolas
+@mixin title-font
+  font-family: 'Roboto', sans-serif
 
-@import "colors"
+@mixin text-font
+  font-family: 'Roboto', sans-serif
+
+@mixin comment-font
+  font-family: 'Roboto', sans-serif
+  font-size: 0.8em
+  opacity: 0.9
+
+@mixin note-font
+  font-family: 'Permanent Marker', cursive
+
+@mixin tech-font
+  font-family: 'Share Tech Mono', monospace
+
+@import "fonts"
 @import "layouts"
 @import "base"
 @import "sections/introduction"
+@import "sections/mission"
 

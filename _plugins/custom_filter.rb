@@ -29,12 +29,12 @@ module Jekyll::CustomFilter
         ret += years.to_s + " ans"
       end
       if mounths > 0 and years > 0 
-        ret += " et "
+        ret += "<br/>"
       end
       if mounths > 0
         ret += mounths.to_s  + " mois" 
       end
     end
   end
-  
+
   Liquid::Template.register_filter(Jekyll::CustomFilter)

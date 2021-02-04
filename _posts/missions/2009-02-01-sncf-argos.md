@@ -3,7 +3,7 @@ layout: page
 categories: mission
 title: "Intranet pour la Saisie sur Salaire"
 skills:
-  - backend
+  - Backend
 start_date: 2009-02-01
 end_date: 2011-07-01
 entreprise : SNCF

@@ -2,9 +2,9 @@
 layout: page
 categories: mission
 skills:
-  - frontend
-  - backend
-  - devops
+  - Frontend
+  - Backend
+  - DevOps
 title: ""
 start_date: 2000-01-01
 end_date: 2000-01-01
