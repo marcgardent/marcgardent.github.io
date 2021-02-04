@@ -26,30 +26,13 @@
 
   <!-- Use Atom -->
   {% feed_meta %}
-
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-  </script>
-
   {% include analytics.html %}
-
   <!-- Use Jekyll SEO plugin -->
   {% seo %}
-
 </head>
 <body>
-
 <div class="site-container">
-
-  {% include header.html %}
-
   {{ content }}
-
-  {% include footer.html %}
-
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="{{ site.github.url }}/assets/js/functions.js"></script>
 </body>
 </html>

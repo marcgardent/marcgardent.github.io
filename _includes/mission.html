@@ -1,0 +1,67 @@
+{% assign mission = include.mission %}
+
+<section class="mission">
+  <div>
+    <h1>
+      <span class='highlight'>{{ mission.entreprise | upcase  }}</span>{{ mission.title | markdownify | inline}}</h1>
+    <span>
+      {{ mission.start_date | duration: mission.end_date }}
+      {% for skill in mission.skills %}
+        <img class="tag" src="{{ site.github.url }}/assets/img/{{skill}}-tag.svg" alt="{{skill}}"/>
+        {%endfor%}
+        <b>{{mission.position| markdownify | inline}}</b> du <b>{{ mission.start_date| date: "%m/%Y" }}</b> au <b>{{ mission.end_date| date: "%m/%Y" }}</b>
+      </span>
+      <div>
+        {% for item in mission.environnements %}
+          <code>{{ item }}, </code>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div>
+      <h2>{{mission.entreprise}} : {{ mission.title | markdownify | inline  }}</h2>
+      <h3>Contexte</h3>
+      <div>{{mission.position| markdownify}}</div>
+      <h3>Description</h3>
+      <p>
+    Mission du <b>{{ mission.date| date: "%m/%Y" }}</b> au <b>{{ mission.end_date| date: "%m/%Y" }}</b>
+    en tant que <b>{{mission.position| markdownify | inline}}</b> ({{mission.status| markdownify | inline}}) :
+    <ul>
+          <li>
+            <b>Équipe :</b>{{mission.team| markdownify | inline}}</li>
+          <li>
+            <b>Réalisations</b> :
+    <ul>
+              {% for item in mission.acheivements %}
+                {{ item | markdownify | inline }}
+              {% endfor %}
+            </ul>
+          </li>
+          <li>
+            <b>Environnement</b> : 
+    {% for item in mission.environnements %}
+              <code>{{ item }},</code>
+            {% endfor %}
+          </li>
+        </ul>
+      </p>
+      <h3>Bilan</h3>
+      <p>
+        <b>Mon expérience acquise :</b>
+        <ul>
+          {% for item in mission.output_skill %}
+            <li>{{ item | markdownify | inline}}</li>
+          {% endfor %}
+        </ul>
+      </p>
+
+      <div>
+        <b>Mon apport :</b>
+        <ul>
+          {% for item in mission.input_skill %}
+            <li>{{ item | markdownify | inline}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>

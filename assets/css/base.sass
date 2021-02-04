@@ -1,0 +1,42 @@
+body
+  background: $fill
+  font-family: $text-font
+  font-size: 16px
+  ::selection
+    background-color: $accent-light
+.site-container
+  width: 750px
+  margin: auto
+
+@media (max-width: 768px)
+  .site-container
+    width: 95vw
+    
+
+img
+  mix-blend-mode: multiply
+
+a
+  color: $accent
+
+a:hover
+  color: $accent-dark
+
+.highlight
+  color: $fill
+  background-color: $stroke 
+  border-radius: 0.15em
+  padding-left: 0.25em
+  padding-right: 0.25em
+
+a:hover .highlight
+  color: $fill
+  background-color: $accent
+
+.tag
+  height: 1.5em
+  vertical-align: text-bottom
+
+
+h1, h2, h3, h4, h5
+  font-family: $title-font

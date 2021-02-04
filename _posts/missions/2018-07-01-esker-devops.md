@@ -1,5 +1,5 @@
 ---
-layout: mission
+layout: page
 categories: mission
 title: "création et industrialisation de l'infrastructure `Azure`"
 categories: 'mission'
@@ -33,6 +33,6 @@ output_skill:
  - De plus, j'ai pu découvrir et expérimenter comment avancer dans une organisation exclusivement horizontale.
  - Esker offre l'oportunité de se former sur les `softskill` et donc j'ai pu faire une formation sur `Process Com` ce qui m'a amener à creuser personnellement le sujet avec le `Karpman Process Model`.
  - J'ai eu l'oportunité de réaliser des présentations  et rédiger des articles.
+story: |
+  Esker offre sur un plaforme  `SaaS` afin d'automatiser le traitement de documents. En particulier elle offre des solutions pour le cycle des factures et des bon de commandes. La R&D de plus 150 personnes est dédié à l'évolution technique et fonctionnelle de la plateforme. La mission de mon équipe est mettre en place le socle technique dans différent zone géographique: Europe, Australie, Canada, État-unis.
 ---
-
-Esker offre sur un plaforme  `SaaS` afin d'automatiser le traitement de documents. En particulier elle offre des solutions pour le cycle des factures et des bon de commandes. La R&D de plus 150 personnes est dédié à l'évolution technique et fonctionnelle de la plateforme. La mission de mon équipe est mettre en place le socle technique dans différent zone géographique: Europe, Australie, Canada, État-unis.

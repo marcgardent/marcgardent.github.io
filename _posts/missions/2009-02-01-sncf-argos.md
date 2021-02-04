@@ -1,5 +1,5 @@
 ---
-layout: mission
+layout: page
 categories: mission
 title: "Intranet pour la Saisie sur Salaire"
 skills:
@@ -23,8 +23,8 @@ input_skill:
 output_skill:
  - J'ai demandé à rester après la mise en production pour complèter
  - "Cette experience ma permis d'aprehender les enjeux d'une grande entreprise dans la gestion du developpement logiciel: séparation du développement, intégration et exploitation, Gestion des exigences, traçabilité (cf. ITIL, ISO27002)."
+story: |
+  L'état a délégué une grande partie des fonctions sociales à la SNCF et donc garde cette tradition de ce rôle. Et donc dans la gestion de l'oboslescence du COBOL, j'ai participé au projet de réecriture en C# Asp.NET pour le traitement des saisies sur salaires.
+
+  Ceci s'inscrit dans un Forfait groupé plafonné: une équipe Osiatis dans les batiments de la SNCF, et donc un co-pilotage de la gouvernance du projet.
 ---
-
-L'état a délégué une grande partie des fonctions sociales à la SNCF et donc garde cette tradition de ce rôle. Et donc dans la gestion de l'oboslescence du COBOL, j'ai participé au projet de réecriture en C# Asp.NET pour le traitement des saisies sur salaires.
-
-Ceci s'inscrit dans un Forfait groupé plafonné: une équipe Osiatis dans les batiments de la SNCF, et donc un co-pilotage de la gouvernance du projet.

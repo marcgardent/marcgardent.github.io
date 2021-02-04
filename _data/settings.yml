@@ -42,4 +42,9 @@ social:
 - {icon: 'twitter', link: 'https://twitter.com/marcgardent'}
 - {icon: 'medium', link: 'https://medium.com/@marcgardent'}
 
+tech:
+ devops: [Terraform, Ansible, Chef, AzureDevOps, Jenkins, Prometheus]
+ frontend: [Angular 2+, CSS, HTML, MVC.NET]
+ backend: [RabbitMQ, DotNetCore, DotNet, C#, Nhibernate]
+
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

@@ -1,5 +1,5 @@
 ---
-layout: mission
+layout: page
 categories: mission
 title: "Centre de service Rhône Alpes Osiatis"
 skills:
@@ -27,6 +27,8 @@ input_skill:
 output_skill:
  - J'ai decouvert CastleProject, et la mise en place concrètes de factories, d'injection de dépendances et la programmation orientée aspect.
  - Cette éxpérience complête ma vision du secteur informatique en découvrant le monde du forfait et de la TMA.
----
 
-Osiatis avait à l'époque 150 colaborateurs sur Lyon, et donc avait la maturité suffisante pour constituer leur centre de service Rhône Alpes. Dans se cadre j'ai participé au premier pas du CDS.
+story: |
+  Osiatis avait à l'époque 150 colaborateurs sur Lyon, et donc avait la maturité suffisante pour constituer leur centre de service Rhône Alpes. Dans se cadre j'ai participé au premier pas du CDS.
+
+---

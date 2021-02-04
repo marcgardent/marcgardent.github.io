@@ -1,5 +1,5 @@
 ---
-layout: mission
+layout: page
 categories: mission
 title: "Conception & Réalisation d'une platforme multi-tenant de traitement de documents"
 start_date: 2013-10-01
@@ -30,6 +30,6 @@ input_skill:
 output_skill:
  - Tessi m'a permis d'élargir ma vision technique sur l'exploitation, et donc ma transformé de developpeur à un DevOps accompli.
  - "La confiance de Tessi ma permis de créer une architecture complète des premières lignes de code jusqu'a l'exploitation : une expérience unique et très enrichissante"
+story: |
+  Sous la responsabilité du directeur technique, au seins du pôle developpement de ~40 personnes travaillant sur différentes solutions BPO.
 ---
-
-Sous la responsabilité du directeur technique, au seins du pôle developpement de ~40 personnes travaillant sur différentes solutions BPO.

@@ -1,9 +1,13 @@
 ---
-layout: mission
+layout: page
 categories: mission
+skills:
+  - frontend
+  - backend
+  - devops
 title: ""
-start_date: 2000-00-00
-end_date: 2000-00-00
+start_date: 2000-01-01
+end_date: 2000-01-01
 entreprise : entreprise
 team : desc
 position: desc 
@@ -20,4 +24,4 @@ output_skill:
  - softskill
 ---
 
-contexte
+context
