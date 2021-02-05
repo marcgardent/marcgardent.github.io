@@ -2,26 +2,30 @@
 <section>
   <h2>
     <span class='highlight'>{{ mission.entreprise | upcase  }}</span>{{ mission.title | markdownify | inline}}</h2>
-  <span>
-    <b>{{mission.position| markdownify | inline}}</b> du <b>{{ mission.start_date| date: "%m/%Y" }}</b> au <b>{{ mission.end_date| date: "%m/%Y" }}</b>
-  </span>
-  <div>
-    {% for item in mission.environnements %}
-      <code>{{ item }}
-      </code>
-    {% endfor %}
-  </div>
-  <div class="comment">{{mission.story| markdownify}}</div>
   <p>
-    Mission du <b>{{ mission.date| date: "%m/%Y" }}</b> au <b>{{ mission.end_date| date: "%m/%Y" }}</b>
-    en tant que <b>{{mission.position| markdownify | inline}}</b> ({{mission.status| markdownify | inline}})
-    <b>Équipe :</b>{{mission.team| markdownify | inline}}:
+    <b>{{mission.position| markdownify | inline}}</b>
+  </p>
+  <p>du <b>{{ mission.start_date| date: "%m/%Y" }}</b> au <b>{{ mission.end_date| date: "%m/%Y" }}</b></p>
+  <p>
+      Équipe <b>{{mission.team| markdownify | inline}}</b>
+  </p>
+  <p>
     <ul>
-      {% for item in mission.acheivements %}
+      {% for item in mission.achievements %}
         <li>{{ item | markdownify | inline }}</li>
       {% endfor %}
     </ul>
   </p>
+  <div class="environnements">
+  {% for item in mission.environnements %}<code>{{ item }}{%- unless forloop.last %}, {%- endunless %}</code>
+  
+  {% endfor %}
+  </div>
+  
+  {% if False %}
+  <h3>Contexte</h3>
+  <div class="comment">{{mission.story| markdownify}}</div>
+  <h3>Bilan</h3>
   <p class="comment">
       {% for item in mission.output_skill %}
         {{ item | markdownify | inline}}
@@ -32,4 +36,5 @@
         {{ item | markdownify | inline}}
       {% endfor %}
   </p>
+  {% endif %}
 </section>

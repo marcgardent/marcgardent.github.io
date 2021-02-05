@@ -7,17 +7,16 @@ skills:
 start_date: 2009-02-01
 end_date: 2011-07-01
 entreprise : SNCF
-team : 7 en MOE dont 4 Développeurs
+team : de 7 en MOE dont 4 Développeurs
 position: Concepteur-Développeur 
-status: Externe, CDI Osiatis
-acheivements:
-- Ajout des fonctionnalités pour les pensions alimentaires
-- Mise en place de test d'intégration automatisé pour les traitements
-- Maintenance de code et test
-- Gestion de versions, livraison
+status: Externe, CDI **Osiatis**
+achievements:
+- Ajout des fonctionnalités pour les pensions alimentaires.
+- Mise en place de test d'intégration automatisé pour les traitements.
+- Maintenance de code et test.
+- Gestion de versions, livraison.
 
-environnements:
-  - [C#, ASP.Net, EntLib, Sql Server, Caliber, Quality Center]
+environnements: [C#, ASP.Net, EntLib, Sql Server, Caliber, Quality Center]
 input_skill:
  - J'ai travaillé en tant qu'operateur de saisie de dossier surendettement et décision de justice. Cette coïncidence, a attiser mon intéret pour la partie métier. 
 output_skill:

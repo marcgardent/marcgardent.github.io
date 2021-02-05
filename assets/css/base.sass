@@ -1,15 +1,30 @@
+
+body, div, section, p, span, code, h1,h2,h3,h4,h5, b, i, ul, li, img
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+ul
+  padding-left: 2em
+  padding-top: 0.5em
+  padding-bottom: 0.5em
+p
+  padding-top: 0.5em
+  padding-bottom: 0.5em
+
 body
   @include text-font 
   background: $fill
-  font-size: 16px
+  font-size: $normal-font
   text-align: justify
+  color: $stroke
   ::selection
     background-color: $accent-light
 .site-container
-  width: 750px
+  width: $width-page
   margin: auto
 
-@media (max-width: 768px)
+@media (max-width: $width-fluent)
   .site-container
     width: 95vw
 
@@ -28,9 +43,9 @@ a:hover
 .highlight
   color: $fill
   background-color: $stroke 
-  border-radius: 0.15em
-  padding-inline: 0.25em
-  margin-inline: 0.25em
+  border-radius: $corner
+  padding-inline: $normal-space
+  margin-inline: $normal-space
 
 a:hover .highlight
   color: $fill
@@ -42,6 +57,29 @@ a:hover .highlight
 
 h1, h2, h3, h4, h5
   @include title-font
+  text-align: left
+
+h1, h2, h3, h4, h5
+  padding: 0
+  margin: 0
+
+h1
+  padding:
+    top: $huge-space
+    bottom:  $huge-space
+h2
+  padding:
+    top: $huge-space
+    bottom:  $huge-space
+h3
+  padding:
+    top: $normal-space
+    bottom:  $normal-space
+h4, h5
+  padding:
+    top: $tiny-space
+    bottom:  $tiny-space
+
 
 .skill
   @include tech-font

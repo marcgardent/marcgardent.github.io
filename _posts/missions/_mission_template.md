@@ -12,7 +12,7 @@ entreprise : entreprise
 team : desc
 position: desc 
 status: desc
-acheivements:
+achievements:
   - desc
 environnements:
   - motclef

@@ -1,11 +1,13 @@
 {% assign mission = include.mission %}
-
 <section class="mission">
   <div class="box-layout">
     <div class="annotation-box">
       <div class="v-layout between">
         <div class="xp">
+          <div class="hole"><svg><circle/></svg></div>
+          <div>
           {{ mission.start_date | duration: mission.end_date }}
+          </div>
           {% for skill in mission.skills %}
             <div>
             {% include skill-logo.html name=skill %}

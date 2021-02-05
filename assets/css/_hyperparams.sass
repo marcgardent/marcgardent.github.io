@@ -1,0 +1,41 @@
+
+$tiny-line: 2pt
+$normal-line: $tiny-line*2
+$huge-line:$normal-line *2
+
+$tiny-space: $tiny-line *2
+$normal-space: $normal-line *2
+$huge-space: $huge-line *2
+
+$tiny-font: 8pt
+$normal-font: 12pt
+$big-font: 16pt
+$huge-font: 24pt
+
+$width-page: 200mm
+$width-fluent: 205mm
+$width-column: 160mm
+
+$stroke: black
+$fill: white
+$accent: magenta
+$accent-light:  lighten($accent, 30%)
+$accent-dark:  darken($accent, 30%)
+$corner: $tiny-space
+
+@mixin title-font
+  font-family: 'Roboto', sans-serif
+
+@mixin text-font
+  font-family: 'Roboto', sans-serif
+
+@mixin comment-font
+  font-family: 'Roboto', sans-serif
+  font-size: $tiny-font
+  opacity: 0.9
+
+@mixin note-font
+  font-family: 'Permanent Marker', cursive
+
+@mixin tech-font
+  font-family: 'Share Tech Mono', monospace
