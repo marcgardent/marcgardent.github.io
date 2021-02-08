@@ -177,6 +177,9 @@ section.mission .content-box {
       flex: 1 0 0; }
     section.mission .content-box .properties img {
       width: 32pt; }
+    section.mission .content-box .properties .status {
+      font-weight: normal;
+      font-style: italic; }
   section.mission .content-box .environments {
     padding: 4pt;
     margin: 4pt;

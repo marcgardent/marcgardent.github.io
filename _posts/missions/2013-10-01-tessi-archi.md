@@ -10,7 +10,7 @@ skills:
 company : Tessi
 team : 1 à 4 développeurs
 position: Développeur puis Responsable Technique Produit 
-status: CDI (externe Guarani, puis interne)
+status: ext. Guarani puis interne
 achievements:
   - Conception d'architecture distribuée multi-tenant d'une plateforme de traitement de document.
   - Réalisation et migration vers la nouvelle solution.

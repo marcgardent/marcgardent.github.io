@@ -8,8 +8,8 @@ start_date: 2008-07-01
 end_date: 2008-11-01
 company : Osiatis
 team : de 2 à 4 développeurs
-position: Développeur 
-status: CDI
+position: Développeur
+status: interne
 achievements:
   - "Projet **Siemens** : développement d'IHM, `ASP.NET` `Oracle`."
   - "Projet **Escota** : module de reporting client lourd `C#` `.Net 2.0`."

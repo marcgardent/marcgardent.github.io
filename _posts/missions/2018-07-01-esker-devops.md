@@ -10,7 +10,7 @@ skills:
 company: Esker
 team : 7 DevOps, 1 Product Owner et 1 Scrum Master
 position: Ingénieur R&D
-status: CDI
+status: interne
 achievements:
   - "Utilisation de ressources `Azure` : *Infrastructure as a Service* - `IaaS` et *Platform as a Service* - `PaaS`."
   - Initialisation et configuration des ressources avec des outils *Infrastructure As Code* - `IaC`.

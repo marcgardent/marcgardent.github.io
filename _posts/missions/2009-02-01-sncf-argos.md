@@ -9,7 +9,7 @@ end_date: 2011-07-01
 company : SNCF
 team : 7 MOE dont 4 Développeurs
 position: Concepteur-Développeur 
-status: Externe, CDI **Osiatis**
+status: ext. Osiatis
 achievements:
 - Ajout des fonctionnalités pour les pensions alimentaires.
 - Mise en place de test d'intégration automatisé pour les traitements.
