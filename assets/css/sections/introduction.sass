@@ -5,11 +5,7 @@ section.introduction
     font-weight: bold
     font-size: $huge-font
     @include title-font
-    
-  .subtitle
-    font-size: $huge-font
-    display: none
-    @include comment-font 
+    padding: $normal-space
   .position
     font-weight: bold
     @include tech-font
@@ -18,6 +14,13 @@ section.introduction
     color: $fill
     border-radius: $corner
     padding: $tiny-space
+    .noun
+      @include note-font
+      font-weight: normal
+      color: $accent
+      padding:
+        left: $normal-space
+
   .logo
     width: $huge-space*4
   .skill

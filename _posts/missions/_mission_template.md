@@ -8,13 +8,13 @@ skills:
 title: ""
 start_date: 2000-01-01
 end_date: 2000-01-01
-entreprise : entreprise
+company : company
 team : desc
 position: desc 
 status: desc
 achievements:
   - desc
-environnements:
+environments:
   - motclef
 input_skill:
  - hardskill

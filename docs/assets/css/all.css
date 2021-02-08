@@ -60,7 +60,7 @@ body {
   text-align: justify;
   color: black; }
   body ::selection {
-    background-color: #ff99ff; }
+    background-color: #ffff99; }
 
 .site-container {
   width: 200mm;
@@ -76,10 +76,10 @@ img {
   mix-blend-mode: multiply; }
 
 a {
-  color: magenta; }
+  color: yellow; }
 
 a:hover {
-  color: #660066; }
+  color: #666600; }
 
 .highlight {
   color: white;
@@ -90,7 +90,7 @@ a:hover {
 
 a:hover .highlight {
   color: white;
-  background-color: magenta; }
+  background-color: yellow; }
 
 .tag {
   height: 1.5em;
@@ -129,13 +129,8 @@ h4, h5 {
 section.introduction .name {
   font-weight: bold;
   font-size: 24pt;
-  font-family: "Roboto", sans-serif; }
-section.introduction .subtitle {
-  font-size: 24pt;
-  display: none;
   font-family: "Roboto", sans-serif;
-  font-size: 8pt;
-  opacity: 0.9; }
+  padding: 8pt; }
 section.introduction .position {
   font-weight: bold;
   font-family: "Share Tech Mono", monospace;
@@ -144,6 +139,11 @@ section.introduction .position {
   color: white;
   border-radius: 4pt;
   padding: 4pt; }
+  section.introduction .position .noun {
+    font-family: "Permanent Marker", cursive;
+    font-weight: normal;
+    color: yellow;
+    padding-left: 8pt; }
 section.introduction .logo {
   width: 64pt; }
 section.introduction .skill {
@@ -158,14 +158,6 @@ section.introduction .column p {
 
 section.mission h2 {
   font-size: 2em; }
-section.mission h3 {
-  font-size: 0.5em;
-  text-align: center;
-  text-transform: uppercase; }
-section.mission .environnements {
-  padding: 8pt;
-  margin: 8pt;
-  font-size: 16pt; }
 section.mission .box-layout {
   width: 100%;
   display: flex;
@@ -175,6 +167,27 @@ section.mission .box-layout {
   section.mission .box-layout > div {
     padding-top: 16pt;
     padding-bottom: 16pt; }
+section.mission .content-box {
+  width: 100%; }
+  section.mission .content-box .properties {
+    font-weight: bold;
+    align-items: flex-start;
+    text-align: center; }
+    section.mission .content-box .properties div {
+      flex: 1 0 0; }
+    section.mission .content-box .properties img {
+      width: 32pt; }
+  section.mission .content-box .environments {
+    padding: 4pt;
+    margin: 4pt;
+    font-size: 16pt; }
+section.mission .comment {
+  font-family: "Roboto", sans-serif;
+  font-size: 8pt;
+  opacity: 0.9; }
+section.mission li {
+  list-style: none;
+  list-style-image: url(/assets/img/done-ico.svg); }
 section.mission .annotation-box {
   flex: 0 0 120pt;
   background-image: linear-gradient(black, black);
@@ -221,9 +234,3 @@ section.mission .annotation-box {
     width: 4em;
     height: 4em;
     margin-bottom: 16pt; }
-  section.mission .annotation-box .content-box {
-    width: 100%; }
-  section.mission .annotation-box .comment {
-    font-family: "Roboto", sans-serif;
-    font-size: 8pt;
-    opacity: 0.9; }

@@ -1,40 +1,45 @@
 {% assign mission = include.mission %}
 <section>
   <h2>
-    <span class='highlight'>{{ mission.entreprise | upcase  }}</span>{{ mission.title | markdownify | inline}}</h2>
-  <p>
-    <b>{{mission.position| markdownify | inline}}</b>
-  </p>
-  <p>du <b>{{ mission.start_date| date: "%m/%Y" }}</b> au <b>{{ mission.end_date| date: "%m/%Y" }}</b></p>
-  <p>
-      Équipe <b>{{mission.team| markdownify | inline}}</b>
-  </p>
+    <span class='highlight'>{{ mission.company | upcase  }}</span>{{ mission.title | markdownify | inline}}</h2>
+  <div class='h-layout properties'>
+    <div class="v-layout">
+      <img src="/assets/img/job-ico.svg" alt="Poste" />
+      <div>{{mission.position| markdownify | inline}}</div>
+    </div>
+    <div class="v-layout">
+      <img src="/assets/img/calendar-ico.svg" alt="Période" />
+      <div>{{ mission.start_date| date: "%m/%Y" }} - {{ mission.end_date| date: "%m/%Y" }}</div>
+    </div>
+    <div class="v-layout">
+      <img src="/assets/img/team-ico.svg" alt="Équipe" />
+      <div>{{mission.team| markdownify | inline}}</div>
+    </div>
+  </div>
   <p>
     <ul>
       {% for item in mission.achievements %}
-        <li>{{ item | markdownify | inline }}</li>
+      <li>{{ item | markdownify | inline }}</li>
       {% endfor %}
     </ul>
   </p>
-  <div class="environnements">
-  {% for item in mission.environnements %}<code>{{ item }}{%- unless forloop.last %}, {%- endunless %}</code>
-  
-  {% endfor %}
+  <div class="environments">
+    {% for item in mission.environments %}<code>{{ item }}{%- unless forloop.last %}, {%- endunless %}</code>
+    {% endfor %}
   </div>
-  
   {% if False %}
   <h3>Contexte</h3>
   <div class="comment">{{mission.story| markdownify}}</div>
   <h3>Bilan</h3>
   <p class="comment">
-      {% for item in mission.output_skill %}
-        {{ item | markdownify | inline}}
-      {% endfor %}
+    {% for item in mission.output_skill %}
+    {{ item | markdownify | inline}}
+    {% endfor %}
   </p>
   <p class="comment">
-      {% for item in mission.input_skill %}
-        {{ item | markdownify | inline}}
-      {% endfor %}
+    {% for item in mission.input_skill %}
+    {{ item | markdownify | inline}}
+    {% endfor %}
   </p>
   {% endif %}
 </section>

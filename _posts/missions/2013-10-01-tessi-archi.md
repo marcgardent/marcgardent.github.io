@@ -7,15 +7,15 @@ end_date: 2018-07-01
 skills:
   - Backend
   - DevOps
-entreprise : Tessi
-team : de 1 à 4 développeurs
+company : Tessi
+team : 1 à 4 développeurs
 position: Développeur puis Responsable Technique Produit 
 status: CDI (externe Guarani, puis interne)
 achievements:
   - Conception d'architecture distribuée multi-tenant d'une plateforme de traitement de document.
   - Réalisation et migration vers la nouvelle solution.
   - Optimisation et maintenance.
-environnements:
+environments:
   - C#
   - RabbitMQ
   - Aspose.NET

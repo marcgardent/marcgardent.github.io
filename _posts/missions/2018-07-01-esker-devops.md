@@ -7,15 +7,15 @@ start_date: 2018-07-01
 end_date: 2021-04-01
 skills:
   - DevOps
-entreprise: Esker
-team : de 7 DevOps, 1 Product Owner et 1 Scrum Master
+company: Esker
+team : 7 DevOps, 1 Product Owner et 1 Scrum Master
 position: Ingénieur R&D
 status: CDI
 achievements:
   - "Utilisation de ressources `Azure` : *Infrastructure as a Service* - `IaaS` et *Platform as a Service* - `PaaS`."
   - Initialisation et configuration des ressources avec des outils *Infrastructure As Code* - `IaC`.
   - Industrialisation avec la mise en place des *pipelines* `CI/CD` de `Chef`, `Terraform` & `Ansible` sous `AzureDevOps`.
-environnements:
+environments:
   - SCRUM
   - Azure
   - AzureDevOps

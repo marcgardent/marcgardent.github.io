@@ -2,27 +2,10 @@
 <section class="mission">
   <div class="box-layout">
     <div class="annotation-box">
-      <div class="v-layout between">
-        <div class="xp">
-          <div class="hole"><svg><circle/></svg></div>
-          <div>
-          {{ mission.start_date | duration: mission.end_date }}
-          </div>
-          {% for skill in mission.skills %}
-            <div>
-            {% include skill-logo.html name=skill %}
-            </div>
-          {%endfor%}
-        </div>
-        <div class="vh-layout date">
-          <div>
-            {{mission.start_date |date: "%m/%Y"  }}
-        </div>
-        </div>
-      </div>
-      </div>
-      <div class="content-box">
-        {% include mission-details.html mission=mission %}
-      </div>
+      {% include mission-annotations.html mission=mission %}
     </div>
-  </section>
+    <div class="content-box">
+      {% include mission-details.html mission=mission %}
+    </div>
+  </div>
+</section>

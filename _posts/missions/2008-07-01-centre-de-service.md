@@ -6,7 +6,7 @@ skills:
   - Frontend
 start_date: 2008-07-01
 end_date: 2008-11-01
-entreprise : Osiatis
+company : Osiatis
 team : de 2 à 4 développeurs
 position: Développeur 
 status: CDI
@@ -14,7 +14,7 @@ achievements:
   - "Projet **Siemens** : développement d'IHM, `ASP.NET` `Oracle`."
   - "Projet **Escota** : module de reporting client lourd `C#` `.Net 2.0`."
   - "Projet **EASYDIS** : ajout du flux des boites noires, `SQL-Server` `Delphi`."
-environnements:
+environments:
   - C#
   - IBatis
   - CastleProject

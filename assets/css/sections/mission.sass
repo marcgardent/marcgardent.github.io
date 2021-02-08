@@ -2,16 +2,6 @@
 section.mission
   h2
     font-size: 2em
-  h3
-    font-size: 0.5em
-    text-align: center
-    text-transform: uppercase  
-  .environnements
-    //border: solid $tiny-line $stroke
-    //border-radius: $corner
-    padding: $normal-space
-    margin: $normal-space
-    font-size: $big-font
   .box-layout
     width: 100%
     display: flex
@@ -22,9 +12,28 @@ section.mission
       padding:
         top: $huge-space
         bottom: $huge-space
+  .content-box
+    width: 100%
+    .properties
+      font-weight: bold
+      align-items: flex-start
+      text-align: center
+      div
+        flex: 1 0 0
+      img
+        width: $huge-space*2
+    .environments
+      //border: solid $tiny-line $stroke
+      //border-radius: $corner
+      padding: $tiny-space
+      margin: $tiny-space
+      font-size: $big-font
 
-  
-
+  .comment
+    @include comment-font
+  li
+    list-style: none
+    list-style-image: url(/assets/img/done-ico.svg)
   .annotation-box
     $annotation-size: $tiny-space*30
     flex: 0 0 $annotation-size
@@ -72,7 +81,3 @@ section.mission
       width: 4em
       height: 4em
       margin-bottom: $huge-space
-    .content-box
-      width: 100%
-    .comment
-      @include comment-font
