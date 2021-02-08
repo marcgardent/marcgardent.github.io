@@ -1,0 +1,78 @@
+
+section.mission
+  h2
+    font-size: 2em
+  h3
+    font-size: 0.5em
+    text-align: center
+    text-transform: uppercase  
+  .environnements
+    //border: solid $tiny-line $stroke
+    //border-radius: $corner
+    padding: $normal-space
+    margin: $normal-space
+    font-size: $big-font
+  .box-layout
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: stretch
+    > div
+      padding:
+        top: $huge-space
+        bottom: $huge-space
+
+  
+
+  .annotation-box
+    $annotation-size: $tiny-space*30
+    flex: 0 0 $annotation-size
+    background:
+      image: linear-gradient($stroke, $stroke)
+      size: ($tiny-line) 100%
+      repeat: no-repeat
+      position: center center    
+    @media screen and (max-width: $width-fluent)
+        flex: 0 0 $annotation-size/2
+    .xp
+      @include note-font
+      margin-top: $huge-space
+      padding: $normal-space
+      border-radius: $corner
+      text-align: center
+      font-size: 1.5em
+      background: $fill
+      transform-origin: bottom right
+      transform: rotateZ(-4deg)
+      border: solid $tiny-line $stroke
+      $circle-size: $normal-space
+      @media screen and (max-width: $width-fluent)
+        font-size: 1em
+      .hole
+        font-size: 0
+        svg
+          width: $circle-size+$tiny-line
+          height: $circle-size+$tiny-line
+          fill: $fill
+        circle
+          stroke: $stroke
+          stroke-width: $tiny-line/2
+          fill: $fill
+          cx: ($circle-size+$tiny-line)/2
+          cy: ($circle-size+$tiny-line)/2
+          r: $circle-size/2
+      .skill
+        font-size: 0.6em
+    .date
+      display: none
+      color: $fill
+      background: $stroke
+      border-radius: 50%
+      width: 4em
+      height: 4em
+      margin-bottom: $huge-space
+    .content-box
+      width: 100%
+    .comment
+      @include comment-font
