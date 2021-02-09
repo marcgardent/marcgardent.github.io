@@ -19,7 +19,8 @@ body
   text-align: justify
   color: $stroke
   ::selection
-    background-color: $accent-light
+    background-color: $accent
+
 .site-container
   width: $width-page
   margin: auto
@@ -27,6 +28,11 @@ body
 @media (max-width: $width-fluent)
   .site-container
     width: 95vw
+
+.strip
+  width: 100%
+  background-color: $accent
+  box-shadow: 5px 11px 8px -10px #EEE
 
 code
   @include tech-font
@@ -85,3 +91,16 @@ h4, h5
   font-weight: bold
   img
     width: 4em
+
+blockquote 
+  @include text-font
+  font-size: $normal-font
+  text-align: center
+  ::before
+    content: '“'
+    font-size: 2em
+  ::after
+    content: '”'
+    font-size: 2em
+  p
+    display: inline

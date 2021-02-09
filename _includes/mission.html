@@ -1,5 +1,6 @@
 {% assign mission = include.mission %}
 <section class="mission">
+  <h2><span class='highlight'>{{ mission.company | upcase  }}</span>{{ mission.title | markdownify | inline}}</h2>
   <div class="box-layout">
     <div class="annotation-box">
       {% include mission-annotations.html mission=mission %}

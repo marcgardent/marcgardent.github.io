@@ -1,19 +1,22 @@
+
 <section class="introduction">
     <div class="v-layout">
-        <img class="logo" src="/assets/img/mg-ico.svg" alt="logo"/>
+        <img class="logo" src="/assets/img/mg-cap-ico.svg" alt="logo" />
         <div class="name">Marc Gardent</div>
-        <div class="position"><span>Full-Stack</span><span class="noun">Creator</span></div>
+        <div class="position"><span>Full-Stack</span><span class="noun">Builder</span></div>
         <div class="skills h-layout">
             <div class="column">{% include skill-logo.html name="Backend" %}
-                <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+                {{site.data.settings.paragraphs.backend| markdownify}}
             </div>
+            <div class="gap"></div>
             <div class="column">{% include skill-logo.html name="DevOps" %}
-                <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+                {{site.data.settings.paragraphs.devops| markdownify}}
             </div>
+            <div class="gap"></div>
             <div class="column">{% include skill-logo.html name="Frontend" %}
-                <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+                {{site.data.settings.paragraphs.frontend| markdownify}}
             </div>
         </div>
     </div>
-    <p class="target">Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam mari committat.</p>
+    </div>
 </section>

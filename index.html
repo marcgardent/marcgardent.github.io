@@ -3,12 +3,35 @@ layout: default
 title: Home
 ---
 
-{% include introduction.html %}
 
-<section class="mission">
-    {% for mission in site.categories.mission %}
-    {% include mission.html mission=mission %}
-    {% endfor %}
-</section>
+<div class="site-container">
+    {% include introduction.html %}
+</div>
+<div class="strip-disabled">
+    <div class="site-container">
+        <div class="h-layout">{% include skill-logo.html name="Team" %}</div>
+        <div class="target">
+            {{site.data.settings.paragraphs.vision| markdownify}}
+        </div>
+    </div>
+</div>
 
-{% include footer.html %}
+<div class="strip">
+    <div class="site-container">
+        <h1>Mes expériences professionnelles</h1>
+    </div>
+</div>
+
+<div class="site-container">
+    <section class="mission">
+        {% for mission in site.categories.mission %}
+        {% include mission.html mission=mission %}
+        {% endfor %}
+    </section>
+</div>
+
+<div class="strip">
+    <div class="site-container">
+        {% include footer.html %}
+    </div>
+</div>

@@ -1,40 +1,6 @@
-#-------------------------------
-# General Site Settings
-
-menu:
-- {name: 'CV', url: 'missions/'}
-- {name: 'À Propos', url: 'about/'}
-
-#-------------------------------
-# SEO Section
-# NOTE: Providing SEO information will make this website more searchable on the internet.
 
 seo:
   description: Marc Gardent
-  rel-author: 'https://plus.google.com/u/0/#'
-  rel-publisher: 'https://plus.google.com/u/0/#'
-
-#-------------------------------
-# Google Analytics Section
-
-# Analytics helps you understand who visits your website.
-# Learn more at: http://support.google.com/analytics/answer/1008065
-
-# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
-
-# If you are not using Google Analytics, please change 'google-ID' to an empty string
-#google-analytics-ua: ''
-
-#-------------------------------
-# Disqus Section
-
-# Change to true for Disqus comments
-disqus:
-  comments: false
-  disqus_shortname: 'thathungrymind'
-
-#-------------------------------
-# Contact Section
 
 social:
 - {icon: 'linkedin', link: 'https://linkedin.com/in/marcgardent'}
@@ -43,8 +9,28 @@ social:
 - {icon: 'medium', link: 'https://medium.com/@marcgardent'}
 
 tech:
- devops: [Terraform, Ansible, Chef, AzureDevOps, Jenkins, Prometheus]
+ devops: [Azure, Terraform, Ansible, Chef, AzureDevOps, Jenkins]
  frontend: [Angular 2+, CSS, HTML, MVC.NET]
- backend: [RabbitMQ, DotNetCore, DotNet, C#, Nhibernate]
+ backend: [RabbitMQ, DotNetCore, DotNet, C#, NHibernate, Elastic-Search]
 
-# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+paragraphs:
+  vision: |
+    > Développer est une activité sociale avant tout!
+
+    J'ai une bonne capacité de projection et d'abstraction.
+    Partagez-moi vos besoins en `DevOps`, `Backend` et `Frontend`.
+    Nous construirons les meilleures solutions ensemble!
+    
+  devops: |
+    Mon expérience chez **Tessi** m'a ouvert les portes à une pratique du développement proche de la production.
+    Ce goût pour la partie infrastructure m'a amené chez **Esker** dans l'équipe de création des environnements `Azure`.
+
+    `Azure`, `Terraform`, `Ansible`, `Chef`, `AzureDevOps`, `Jenkins`, `Prometheus`, `Git`.
+  frontend: |
+    J'aime travailler sur les différentes technologies web. Et j'ai une attention particulière pour `Angular2+` dans mes projets personnels.
+
+    `Angular2+`, `CSS`, `HTML`, `DotNetCore`.
+  backend: |
+    De la première ligne de code jusqu'à la mise en production, j'ai créé une plateforme de traitement de document multi-tenant et scalable chez **Tessi**. Et je suis prêt à recommencer!
+
+    `RabbitMQ`, `C# .NET`, `NHibernate`, `PostGreSQL`, `Elastic-Search`.

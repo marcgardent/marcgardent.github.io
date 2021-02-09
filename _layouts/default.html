@@ -9,9 +9,7 @@
   <link rel="icon" sizes="any" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.data.settings.seo.description }}">
-  <meta rel="author" href="{{ site.data.settings.seo.rel-author }}">
-  <meta rel="publisher" href="{{ site.data.settings.seo.rel-publisher }}">
-
+  
   <title>
     {% if page.title == "Home" %}
       {{ site.title }}
@@ -32,8 +30,6 @@
   {% seo %}
 </head>
 <body>
-<div class="site-container">
   {{ content }}
-</div>
 </body>
 </html>
