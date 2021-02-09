@@ -1,14 +1,14 @@
 
     
-section.introduction
+.introduction
   .name
+    @include title-font
     font-weight: bold
     font-size: $huge-font
-    @include title-font
     padding: $normal-space
   .position
-    font-weight: bold
     @include tech-font
+    font-weight: bold
     font-size: $huge-font
     background: $stroke
     color: $fill
@@ -25,13 +25,18 @@ section.introduction
     width: $huge-space*4
   .skill
     font-size: $huge-font
-
+  .skills
+    align-items: flex-start
   @media screen and (max-width: $width-column)
     .skills
       flex-direction: column
-
+    .gap
+        flex-basis: 0
+        display: none
+        
   .target
     @include text-font
   .column
-    p
-      padding: $normal-space
+    flex: 1
+  .gap
+    flex-basis: $huge-space

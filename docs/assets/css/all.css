@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700;900&family=Share+Tech+Mono&display=swap';
 .h-layout {
   width: 100%;
@@ -60,7 +61,7 @@ body {
   text-align: justify;
   color: black; }
   body ::selection {
-    background-color: #ffff99; }
+    background-color: yellow; }
 
 .site-container {
   width: 200mm;
@@ -69,6 +70,11 @@ body {
 @media (max-width: 205mm) {
   .site-container {
     width: 95vw; } }
+.strip {
+  width: 100%;
+  background-color: yellow;
+  box-shadow: 5px 11px 8px -10px #EEE; }
+
 code {
   font-family: "Share Tech Mono", monospace; }
 
@@ -126,35 +132,55 @@ h4, h5 {
   .skill img {
     width: 4em; }
 
-section.introduction .name {
+blockquote {
+  font-family: "Roboto", sans-serif;
+  font-size: 12pt;
+  text-align: center; }
+  blockquote ::before {
+    content: "“";
+    font-size: 2em; }
+  blockquote ::after {
+    content: "”";
+    font-size: 2em; }
+  blockquote p {
+    display: inline; }
+
+.introduction .name {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 24pt;
-  font-family: "Roboto", sans-serif;
   padding: 8pt; }
-section.introduction .position {
-  font-weight: bold;
+.introduction .position {
   font-family: "Share Tech Mono", monospace;
+  font-weight: bold;
   font-size: 24pt;
   background: black;
   color: white;
   border-radius: 4pt;
   padding: 4pt; }
-  section.introduction .position .noun {
+  .introduction .position .noun {
     font-family: "Permanent Marker", cursive;
     font-weight: normal;
     color: yellow;
     padding-left: 8pt; }
-section.introduction .logo {
+.introduction .logo {
   width: 64pt; }
-section.introduction .skill {
+.introduction .skill {
   font-size: 24pt; }
+.introduction .skills {
+  align-items: flex-start; }
 @media screen and (max-width: 160mm) {
-  section.introduction .skills {
-    flex-direction: column; } }
-section.introduction .target {
+  .introduction .skills {
+    flex-direction: column; }
+  .introduction .gap {
+    flex-basis: 0;
+    display: none; } }
+.introduction .target {
   font-family: "Roboto", sans-serif; }
-section.introduction .column p {
-  padding: 8pt; }
+.introduction .column {
+  flex: 1; }
+.introduction .gap {
+  flex-basis: 16pt; }
 
 section.mission h2 {
   font-size: 2em; }
