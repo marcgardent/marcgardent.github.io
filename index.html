@@ -10,8 +10,18 @@ title: Home
 <div class="strip-disabled">
     <div class="site-container">
         <div class="h-layout">{% include skill-logo.html name="Team" %}</div>
-        <div class="target">
-            {{site.data.settings.paragraphs.vision| markdownify}}
+        <div class="h-layout">
+            <div class="target">
+                {{site.data.settings.paragraphs.vision| markdownify}}
+            </div>
+            <div class="social-media">
+                <nav>
+                    {% for item in site.data.settings.social %}
+                    <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}"
+                            aria-hidden="true"></i></a>
+                    {% endfor %}
+                </nav>
+            </div>
         </div>
     </div>
 </div>
@@ -30,6 +40,25 @@ title: Home
     </section>
 </div>
 
+<div class="strip">
+    <div class="site-container">
+        <h1>Mes Diplômes</h1>
+    </div>
+</div>
+
+<div class="site-container">
+    <div class="compress h-layout">
+        {% for diploma in site.data.settings.diploma %}
+        <div class="v-layout" style="flex: 1;">
+            <img src="/assets/img/Diploma-ico.svg" alt="{{include.name}}"/>
+            <div>{{diploma.date}}</div>
+            <div><b>{{diploma.title}}</b></div>
+            <div>{{diploma.location}}</div>
+        </div>
+        {%- unless forloop.last %}<div class="gap"></div>{%- endunless %}
+        {% endfor %}
+    </div>
+</div>
 <div class="strip">
     <div class="site-container">
         {% include footer.html %}

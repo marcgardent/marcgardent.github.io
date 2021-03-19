@@ -40,6 +40,19 @@
   height: 100%;
   width: 100%; }
 
+.compress {
+  align-items: flex-start; }
+  @media screen and (max-width: 160mm) {
+    .compress {
+      flex-direction: column; } }
+
+.gap {
+  flex-basis: 16pt; }
+  @media screen and (max-width: 160mm) {
+    .gap {
+      flex-basis: 0;
+      display: none; } }
+
 body, div, section, p, span, code, h1, h2, h3, h4, h5, b, i, ul, li, img {
   box-sizing: border-box;
   padding: 0;
@@ -145,6 +158,9 @@ blockquote {
   blockquote p {
     display: inline; }
 
+.note {
+  font-family: "Permanent Marker", cursive; }
+
 .introduction .name {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -167,20 +183,10 @@ blockquote {
   width: 64pt; }
 .introduction .skill {
   font-size: 24pt; }
-.introduction .skills {
-  align-items: flex-start; }
-@media screen and (max-width: 160mm) {
-  .introduction .skills {
-    flex-direction: column; }
-  .introduction .gap {
-    flex-basis: 0;
-    display: none; } }
 .introduction .target {
   font-family: "Roboto", sans-serif; }
 .introduction .column {
   flex: 1; }
-.introduction .gap {
-  flex-basis: 16pt; }
 
 section.mission h2 {
   font-size: 2em; }

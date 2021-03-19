@@ -13,6 +13,7 @@
   justify-content: space-evenly
   align-items: center
 
+  
 .evenly
   justify-content: space-evenly
 .around
@@ -33,3 +34,14 @@
     align-items: center
     height: 100%
     width: 100%
+
+.compress
+  align-items: flex-start
+  @media screen and (max-width: $width-column)
+    flex-direction: column
+.gap
+  flex-basis: $huge-space
+  @media screen and (max-width: $width-column)
+    flex-basis: 0
+    display: none
+
