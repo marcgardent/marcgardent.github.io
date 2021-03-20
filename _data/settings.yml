@@ -15,12 +15,13 @@ tech:
 
 paragraphs:
   vision: |
-    > Développer est une activité sociale avant tout!
-
     J'ai une bonne capacité de projection et d'abstraction.
     Partagez-moi vos besoins en `DevOps`, `Backend` et `Frontend`.
     Nous construirons les meilleures solutions ensemble!
-    
+
+    Prenons un rendez-vous pour en discuter, contactez-moi sur [linkedin @MarcGardent](https://linkedin.com/in/marcgardent) 
+    Je suis disponible sur Lyon et en télétravail.
+
   devops: |
     Mon expérience chez **Tessi** m'a ouvert les portes à une pratique du développement proche de la production.
     Ce goût pour la partie infrastructure m'a amené chez **Esker** dans l'équipe de création des environnements `Azure`.
@@ -34,3 +35,22 @@ paragraphs:
     De la première ligne de code jusqu'à la mise en production, j'ai créé une plateforme de traitement de document multi-tenant et scalable chez **Tessi**. Et je suis prêt à recommencer!
 
     `RabbitMQ`, `C# .NET`, `NHibernate`, `PostGreSQL`, `Elastic-Search`.
+
+diploma:
+  - title: Degree of Bachelor of science with distinction (Licence)
+    location: Napier University, Édimbourg, Écosse
+    date: 2007
+
+  - title: DUT Informatique génie logiciel
+    location: Université Pierre Mendès France, Grenoble, France
+    date: 2006
+
+  # - title: Baccalauréat Série Scientifique, Spécialité Mathématique
+  #   location: Lycée Aristide Bergès, Grenoble, France
+  #   date: 2004
+
+personnel: |
+  Je suis papa, cycliste et amateur de conception de jeux videos. Je partage ma passion pour le ludique et le graphisme sur [instagram @ludopant](https://instagram.com/ludopant). Et vous pouvez retrouver d'autres projets de code en tout genre sur mon [github @marcgardent](https://github.com/marcgardent).
+
+footer: |
+  Merci de votre attention! A bientôt sur [linkedin @MarcGardent](https://linkedin.com/in/marcgardent).

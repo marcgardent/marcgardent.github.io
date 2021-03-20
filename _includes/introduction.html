@@ -1,10 +1,11 @@
-
 <section class="introduction">
     <div class="v-layout">
-        <img class="logo" src="/assets/img/mg-cap-ico.svg" alt="logo" />
+        <img class="logo" src="/assets/img/mg-cap-ico.svg" alt="logo"/>
         <div class="name">Marc Gardent</div>
-        <div class="position"><span>Full-Stack</span><span class="noun">Builder</span></div>
-        <div class="skills h-layout">
+        <div class="position">
+            <span>Full-Stack</span>
+            <span class="noun">Builder</span></div>
+        <div class="compress h-layout">
             <div class="column">{% include skill-logo.html name="Backend" %}
                 {{site.data.settings.paragraphs.backend| markdownify}}
             </div>
@@ -17,6 +18,11 @@
                 {{site.data.settings.paragraphs.frontend| markdownify}}
             </div>
         </div>
-    </div>
+        <div class="box h-layout">
+            {% include skill-logo.html name="Team" %}
+            <div class="target">
+                {{site.data.settings.paragraphs.vision| markdownify}}
+            </div>
+        </div>
     </div>
 </section>

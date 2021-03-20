@@ -40,6 +40,19 @@
   height: 100%;
   width: 100%; }
 
+.compress {
+  align-items: flex-start; }
+  @media screen and (max-width: 160mm) {
+    .compress {
+      flex-direction: column; } }
+
+.gap {
+  flex-basis: 16pt; }
+  @media screen and (max-width: 160mm) {
+    .gap {
+      flex-basis: 0;
+      display: none; } }
+
 body, div, section, p, span, code, h1, h2, h3, h4, h5, b, i, ul, li, img {
   box-sizing: border-box;
   padding: 0;
@@ -73,7 +86,9 @@ body {
 .strip {
   width: 100%;
   background-color: yellow;
-  box-shadow: 5px 11px 8px -10px #EEE; }
+  box-shadow: 5px 11px 8px -10px #EEE;
+  margin-top: 16pt;
+  margin-bottom: 16pt; }
 
 code {
   font-family: "Share Tech Mono", monospace; }
@@ -82,7 +97,8 @@ img {
   mix-blend-mode: multiply; }
 
 a {
-  color: yellow; }
+  color: #666600;
+  font-size: large; }
 
 a:hover {
   color: #666600; }
@@ -145,6 +161,19 @@ blockquote {
   blockquote p {
     display: inline; }
 
+.note {
+  font-family: "Permanent Marker", cursive; }
+
+section {
+  page-break-inside: avoid; }
+
+.box {
+  border: solid 2pt black;
+  border-radius: 4pt;
+  padding: 8pt;
+  margin-top: 16pt;
+  margin-bottom: 16pt; }
+
 .introduction .name {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -167,99 +196,91 @@ blockquote {
   width: 64pt; }
 .introduction .skill {
   font-size: 24pt; }
-.introduction .skills {
-  align-items: flex-start; }
-@media screen and (max-width: 160mm) {
-  .introduction .skills {
-    flex-direction: column; }
-  .introduction .gap {
-    flex-basis: 0;
-    display: none; } }
 .introduction .target {
   font-family: "Roboto", sans-serif; }
 .introduction .column {
   flex: 1; }
-.introduction .gap {
-  flex-basis: 16pt; }
 
-section.mission h2 {
-  font-size: 2em; }
-section.mission .box-layout {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch; }
-  section.mission .box-layout > div {
-    padding-top: 16pt;
-    padding-bottom: 16pt; }
-section.mission .content-box {
-  width: 100%; }
-  section.mission .content-box .properties {
-    font-weight: bold;
-    align-items: flex-start;
-    text-align: center; }
-    section.mission .content-box .properties div {
-      flex: 1 0 0; }
-    section.mission .content-box .properties img {
-      width: 32pt; }
-    section.mission .content-box .properties .status {
-      font-weight: normal;
-      font-style: italic; }
-  section.mission .content-box .environments {
-    padding: 4pt;
-    margin: 4pt;
-    font-size: 16pt; }
-section.mission .comment {
-  font-family: "Roboto", sans-serif;
-  font-size: 8pt;
-  opacity: 0.9; }
-section.mission li {
-  list-style: none;
-  list-style-image: url(/assets/img/done-ico.svg); }
-section.mission .annotation-box {
-  flex: 0 0 120pt;
-  background-image: linear-gradient(black, black);
-  background-size: 2pt 100%;
-  background-repeat: no-repeat;
-  background-position: center center; }
-  @media screen and (max-width: 205mm) {
-    section.mission .annotation-box {
-      flex: 0 0 60pt; } }
-  section.mission .annotation-box .xp {
-    font-family: "Permanent Marker", cursive;
-    margin-top: 16pt;
-    padding: 8pt;
-    border-radius: 4pt;
-    text-align: center;
-    font-size: 1.5em;
-    background: white;
-    transform-origin: bottom right;
-    transform: rotateZ(-4deg);
-    border: solid 2pt black; }
+section.mission {
+  page-break-inside: avoid; }
+  section.mission h2 {
+    font-size: 2em; }
+  section.mission .box-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; }
+    section.mission .box-layout > div {
+      padding-top: 16pt;
+      padding-bottom: 16pt; }
+  section.mission .content-box {
+    width: 100%; }
+    section.mission .content-box .properties {
+      font-weight: bold;
+      align-items: flex-start;
+      text-align: center; }
+      section.mission .content-box .properties div {
+        flex: 1 0 0; }
+      section.mission .content-box .properties img {
+        width: 32pt; }
+      section.mission .content-box .properties .status {
+        font-weight: normal;
+        font-style: italic; }
+    section.mission .content-box .environments {
+      padding: 4pt;
+      margin: 4pt;
+      font-size: 16pt; }
+  section.mission .comment {
+    font-family: "Roboto", sans-serif;
+    font-size: 8pt;
+    opacity: 0.9; }
+  section.mission li {
+    list-style: none;
+    list-style-image: url(/assets/img/done-ico.svg); }
+  section.mission .annotation-box {
+    flex: 0 0 120pt;
+    background-image: linear-gradient(black, black);
+    background-size: 2pt 100%;
+    background-repeat: no-repeat;
+    background-position: center center; }
     @media screen and (max-width: 205mm) {
-      section.mission .annotation-box .xp {
-        font-size: 1em; } }
-    section.mission .annotation-box .xp .hole {
-      font-size: 0; }
-      section.mission .annotation-box .xp .hole svg {
-        width: 10pt;
-        height: 10pt;
-        fill: white; }
-      section.mission .annotation-box .xp .hole circle {
-        stroke: black;
-        stroke-width: 1pt;
-        fill: white;
-        cx: 5pt;
-        cy: 5pt;
-        r: 4pt; }
-    section.mission .annotation-box .xp .skill {
-      font-size: 0.6em; }
-  section.mission .annotation-box .date {
-    display: none;
-    color: white;
-    background: black;
-    border-radius: 50%;
-    width: 4em;
-    height: 4em;
-    margin-bottom: 16pt; }
+      section.mission .annotation-box {
+        flex: 0 0 60pt; } }
+    section.mission .annotation-box .xp {
+      font-family: "Permanent Marker", cursive;
+      margin-top: 16pt;
+      padding: 8pt;
+      border-radius: 4pt;
+      text-align: center;
+      font-size: 1.5em;
+      background: white;
+      transform-origin: bottom right;
+      transform: rotateZ(-4deg);
+      border: solid 2pt black; }
+      @media screen and (max-width: 205mm) {
+        section.mission .annotation-box .xp {
+          font-size: 1em; } }
+      section.mission .annotation-box .xp .hole {
+        font-size: 0; }
+        section.mission .annotation-box .xp .hole svg {
+          width: 10pt;
+          height: 10pt;
+          fill: white; }
+        section.mission .annotation-box .xp .hole circle {
+          stroke: black;
+          stroke-width: 1pt;
+          fill: white;
+          cx: 5pt;
+          cy: 5pt;
+          r: 4pt; }
+      section.mission .annotation-box .xp .skill {
+        font-size: 0.6em; }
+    section.mission .annotation-box .date {
+      display: none;
+      color: white;
+      background: black;
+      border-radius: 50%;
+      width: 4em;
+      height: 4em;
+      margin-bottom: 16pt; }
