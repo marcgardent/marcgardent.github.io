@@ -3,27 +3,8 @@ layout: default
 title: Home
 ---
 
-
 <div class="site-container">
     {% include introduction.html %}
-</div>
-<div class="strip-disabled">
-    <div class="site-container">
-        <div class="h-layout">{% include skill-logo.html name="Team" %}</div>
-        <div class="h-layout">
-            <div class="target">
-                {{site.data.settings.paragraphs.vision| markdownify}}
-            </div>
-            <div class="social-media">
-                <nav>
-                    {% for item in site.data.settings.social %}
-                    <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}"
-                            aria-hidden="true"></i></a>
-                    {% endfor %}
-                </nav>
-            </div>
-        </div>
-    </div>
 </div>
 
 <div class="strip">
@@ -35,31 +16,40 @@ title: Home
 <div class="site-container">
     <section class="mission">
         {% for mission in site.categories.mission %}
-        {% include mission.html mission=mission %}
+            {% include mission.html mission = mission %}
         {% endfor %}
     </section>
 </div>
 
 <div class="strip">
     <div class="site-container">
-        <h1>Mes Diplômes</h1>
+        <h1>A Propos</h1>
     </div>
 </div>
 
 <div class="site-container">
+    <h2>Pour changer de sujet...</h2>
+    <div>
+        {{ site.data.settings.personnel | markdownify }}
+    </div>
+    <h2>Mes Diplômes</h2>
     <div class="compress h-layout">
         {% for diploma in site.data.settings.diploma %}
-        <div class="v-layout" style="flex: 1;">
-            <img src="/assets/img/Diploma-ico.svg" alt="{{include.name}}"/>
-            <div>{{diploma.date}}</div>
-            <div><b>{{diploma.title}}</b></div>
-            <div>{{diploma.location}}</div>
-        </div>
-        {%- unless forloop.last %}<div class="gap"></div>{%- endunless %}
+            <div class="v-layout" style="flex: 1;">
+                <img  src="/assets/img/Diploma-ico.svg" alt="{{include.name}}" style="width: 6em;"/>
+                <div>{{diploma.date}}</div>
+                <div>
+                    <b>{{diploma.title}}</b>
+                </div>
+                <div>{{diploma.location}}</div>
+            </div>
+            {%- unless forloop.last %}
+                <div class="gap"></div>
+            {%- endunless %}
         {% endfor %}
     </div>
 </div>
-<div class="strip">
+<div class="strip margintop">
     <div class="site-container">
         {% include footer.html %}
     </div>

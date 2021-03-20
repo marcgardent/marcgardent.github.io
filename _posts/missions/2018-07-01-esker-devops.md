@@ -4,7 +4,7 @@ categories: mission
 title: "création et industrialisation de l'infrastructure `Azure`"
 categories: 'mission'
 start_date: 2018-07-01
-end_date: 2021-04-01
+end_date: 2021-09-01
 skills:
   - DevOps
 company: Esker

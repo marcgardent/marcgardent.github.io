@@ -15,12 +15,13 @@ tech:
 
 paragraphs:
   vision: |
-    > Développer est une activité sociale avant tout!
-
     J'ai une bonne capacité de projection et d'abstraction.
     Partagez-moi vos besoins en `DevOps`, `Backend` et `Frontend`.
     Nous construirons les meilleures solutions ensemble!
-    
+
+    Prenons un rendez-vous pour en discuter, contactez-moi sur [linkedin @MarcGardent](https://linkedin.com/in/marcgardent) 
+    Je suis disponible sur Lyon et en télétravail.
+
   devops: |
     Mon expérience chez **Tessi** m'a ouvert les portes à une pratique du développement proche de la production.
     Ce goût pour la partie infrastructure m'a amené chez **Esker** dans l'équipe de création des environnements `Azure`.
@@ -37,7 +38,7 @@ paragraphs:
 
 diploma:
   - title: Degree of Bachelor of science with distinction (Licence)
-    location: Napier University, Édimbourg, Ecosse
+    location: Napier University, Édimbourg, Écosse
     date: 2007
 
   - title: DUT Informatique génie logiciel
@@ -48,5 +49,8 @@ diploma:
   #   location: Lycée Aristide Bergès, Grenoble, France
   #   date: 2004
 
+personnel: |
+  Je suis papa, cycliste et amateur de conception de jeux videos. Je partage ma passion pour le ludique et le graphisme sur [instagram @ludopant](https://instagram.com/ludopant). Et vous pouvez retrouver d'autres projets de code en tout genre sur mon [github @marcgardent](https://github.com/marcgardent).
+
 footer: |
-  Merci!
+  Merci de votre attention! A bientôt sur [linkedin @MarcGardent](https://linkedin.com/in/marcgardent).

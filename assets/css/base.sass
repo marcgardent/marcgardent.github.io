@@ -33,6 +33,8 @@ body
   width: 100%
   background-color: $accent
   box-shadow: 5px 11px 8px -10px #EEE
+  margin-top: $huge-space
+  margin-bottom: $huge-space
 
 code
   @include tech-font
@@ -41,12 +43,13 @@ img
   mix-blend-mode: multiply
 
 a
-  color: $accent
+  color: $accent-dark
+  font-size: large
 
 a:hover
   color: $accent-dark
 
-.highlight
+.highlight 
   color: $fill
   background-color: $stroke 
   border-radius: $corner
@@ -107,3 +110,14 @@ blockquote
 
 .note
   @include note-font
+
+section
+  page-break-inside: avoid
+
+
+.box
+  border: solid $tiny-line $stroke
+  border-radius: $corner
+  padding: $normal-space
+  margin-top: $huge-space
+  margin-bottom: $huge-space
